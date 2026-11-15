@@ -1,0 +1,65 @@
+%%{init: {"er": {"layoutDirection": "LR"}}}%%
+erDiagram
+    FARMER ||--o{ FARM : owns
+    FARM ||--o{ PLANTING : has
+    CROP ||--o{ PLANTING : "planted as"
+    PLANTING ||--o{ HARVEST : yields
+    SOIL_TYPE ||--o{ FARM : classifies
+    IRRIGATION_TYPE ||--o{ FARM : classifies
+    CROP_CATEGORY ||--o{ CROP : groups
+    SEASON ||--o{ CROP : recommended_for
+    PLANTING_STATUS ||--o{ PLANTING : describes
+    QUALITY_GRADE ||--o{ HARVEST : grades
+    HARVEST_REMARK ||--o{ HARVEST : describes
+    APP_ROLE ||--o{ APP_USER : assigns
+    FARMER {
+        int farmer_id PK
+        varchar first_name
+        varchar last_name
+        varchar contact_number UK
+        varchar address
+        date date_registered
+    }
+    FARM {
+        int farm_id PK
+        int farmer_id FK
+        varchar farm_name
+        varchar location
+        numeric area_hectares
+        smallint soil_type_id FK
+        smallint irrigation_type_id FK
+    }
+    CROP {
+        int crop_id PK
+        varchar crop_name
+        varchar variety
+        smallint crop_category_id FK
+        int growing_period_days
+        smallint season_id FK
+    }
+    PLANTING {
+        int planting_id PK
+        int farm_id FK
+        int crop_id FK
+        date planting_date
+        numeric area_planted
+        numeric seed_quantity
+        date expected_harvest_date
+        smallint status_id FK
+    }
+    HARVEST {
+        int harvest_id PK
+        int planting_id FK
+        date harvest_date
+        numeric quantity_kg
+        numeric selling_price_per_kg
+        smallint grade_id FK
+        smallint remark_id FK
+    }
+    APP_USER {
+        int user_id PK
+        varchar username UK
+        varchar password_hash
+        smallint role_id FK
+        boolean is_active
+    }

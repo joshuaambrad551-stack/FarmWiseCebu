@@ -1,0 +1,692 @@
+[
+ {
+  "group": "Authentication",
+  "name": "Protected page redirects anonymous visitor to login",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Authentication",
+  "name": "Protected form redirects anonymous visitor to login",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Authentication",
+  "name": "Wrong password shows generic error",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Authentication",
+  "name": "Unknown user gives the same generic error",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Authentication",
+  "name": "Passwords are stored as bcrypt hashes, not plain text",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Authentication",
+  "name": "Valid admin login reaches dashboard",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Dashboard",
+  "name": "Summary cards match database counts",
+  "pass": true,
+  "detail": "FARMERS 15 | FARMS 15 | CROPS 10 | PLANTING RECORDS 50 | HARVEST RECORDS 20"
+ },
+ {
+  "group": "Dashboard",
+  "name": "Total harvested quantity matches database",
+  "pass": true,
+  "detail": "41,750.00"
+ },
+ {
+  "group": "Dashboard",
+  "name": "Charts render",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Dashboard",
+  "name": "Recent plantings and harvests tables are filled",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Dashboard",
+  "name": "Navigation links to all modules work (8 links)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Read / Joins",
+  "name": "farmers list loads with 15 records",
+  "pass": true,
+  "detail": "Showing 1-10 of 15 record(s)"
+ },
+ {
+  "group": "Read / Joins",
+  "name": "farms list loads with 15 records",
+  "pass": true,
+  "detail": "Showing 1-10 of 15 record(s)"
+ },
+ {
+  "group": "Read / Joins",
+  "name": "crops list loads with 10 records",
+  "pass": true,
+  "detail": "Showing 1-10 of 10 record(s)"
+ },
+ {
+  "group": "Read / Joins",
+  "name": "plantings list loads with 50 records",
+  "pass": true,
+  "detail": "Showing 1-10 of 50 record(s)"
+ },
+ {
+  "group": "Read / Joins",
+  "name": "harvests list loads with 20 records",
+  "pass": true,
+  "detail": "Showing 1-10 of 20 record(s)"
+ },
+ {
+  "group": "Read / Joins",
+  "name": "users list loads with 2 records",
+  "pass": true,
+  "detail": "Showing 1-2 of 2 record(s)"
+ },
+ {
+  "group": "Read / Joins",
+  "name": "Planting list shows farm name and crop name (JOIN) instead of raw IDs",
+  "pass": true,
+  "detail": "50 Mendoza Farm Watermelon 2026-06-06 1.40 15.00 2026-08-30 Growing View Edit Delete"
+ },
+ {
+  "group": "Read / Joins",
+  "name": "Harvest list shows lookup labels (grade, remarks) from lookup tables",
+  "pass": true,
+  "detail": "20 Mendoza Farm Watermelon 2026-06-03 3,275.00 32.50 PHP 106,437.50 Grade B Good Harvest View Edit Delete"
+ },
+ {
+  "group": "Pagination",
+  "name": "Farmers page 2 shows 5 rows",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Pagination",
+  "name": "Plantings page 5 shows last 10 rows",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Pagination",
+  "name": "Out-of-range page is clamped to last page",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Search",
+  "name": "Farmers search \"reyes\" returns 1 record",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Search",
+  "name": "Farms search by location \"bogo\" returns Mendoza Farm",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Search",
+  "name": "Crops search by variety works",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Search",
+  "name": "SQL injection text in search is treated as plain text (no error, no rows)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Search",
+  "name": "Wildcard character % is escaped (no match-all)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Filter",
+  "name": "Farmers filter by address",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Filter",
+  "name": "Farms filter by irrigation type (Irrigated) returns 6",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Filter",
+  "name": "Crops filter by category (Fruit) returns 3",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Filter",
+  "name": "Plantings filter by status (Harvested) returns 10 on page 1 of 20",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Filter",
+  "name": "Plantings filter by date range matches database count (10)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Filter",
+  "name": "Harvests filter by quality grade matches database count (7)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Filter",
+  "name": "Invalid filter values are ignored safely",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Sorting",
+  "name": "Farms sorted by area DESC shows 5.50 first",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Sorting",
+  "name": "Farms sorted by area ASC shows 1.75 first",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Sorting",
+  "name": "Invalid sort key falls back to default safely",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "CRUD - Farmer",
+  "name": "Create shows success message",
+  "pass": true,
+  "detail": "Farmer #16 was created successfully."
+ },
+ {
+  "group": "CRUD - Farmer",
+  "name": "Record exists in database with audit fields",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "CRUD - Farmer",
+  "name": "Update shows success message and saves change",
+  "pass": true,
+  "detail": "Farmer #16 was updated successfully."
+ },
+ {
+  "group": "CRUD - Farmer",
+  "name": "updated_at changes after update (trigger)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "CRUD - Farmer",
+  "name": "View page shows details",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Duplicate contact number is rejected with a clear message",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Empty required fields show 4 required messages",
+  "pass": true,
+  "detail": "First name is required. / Last name is required. / Contact number is required. / Address is required."
+ },
+ {
+  "group": "Validation",
+  "name": "Whitespace-only name and non-numeric contact number are rejected",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Over-length text and impossible date (Feb 30) are rejected",
+  "pass": true,
+  "detail": "Please fix the following: First name must not exceed 50 characters. Date registered must be a valid date (YYYY-MM-DD)."
+ },
+ {
+  "group": "Validation",
+  "name": "Negative farm area is rejected",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Zero farm area is rejected (must be > 0)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Non-numeric farm area is rejected",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "More than 2 decimal places is rejected",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "CRUD - Farm",
+  "name": "Valid farm is created",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Lookup / Dropdown",
+  "name": "Farm stores numeric soil_type_id and irrigation_type_id (not text)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Duplicate farm name for same farmer is rejected (case-insensitive)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Duplicate crop+variety and decimal growing days rejected",
+  "pass": true,
+  "detail": "Please fix the following: Growing period (days) must be a whole number. This crop and variety combination already exists."
+ },
+ {
+  "group": "CRUD - Crop",
+  "name": "Valid crop is created",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Expected harvest date before planting date is rejected",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Area planted larger than farm area (3.50) is rejected",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Negative seed quantity is rejected",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Missing planting date is rejected",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "CRUD - Planting",
+  "name": "Valid planting is created with joined farm/crop on list",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Lookup / Dropdown",
+  "name": "Planting stores numeric status_id (Planted = 1)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Harvest date before planting date is rejected",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Negative harvest quantity is rejected",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "CRUD - Harvest",
+  "name": "Valid harvest is created",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Lookup / Dropdown",
+  "name": "Selecting \"Low Yield\" stores numeric remark_id 3 in HARVEST",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Lookup / Dropdown",
+  "name": "Edit form pre-selects the stored lookup label",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "CRUD - Harvest",
+  "name": "Update saves new quantity",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Security",
+  "name": "POST without CSRF token is rejected (HTTP 400)",
+  "pass": true,
+  "detail": "status 400"
+ },
+ {
+  "group": "Security",
+  "name": "Create form without CSRF token is rejected (HTTP 400)",
+  "pass": true,
+  "detail": "status 400"
+ },
+ {
+  "group": "Validation",
+  "name": "Forged non-existent farmer_id (FK) is rejected by the app",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Validation",
+  "name": "Forged non-existent soil_type_id (lookup FK) is rejected",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Security",
+  "name": "GET request to delete URL does not delete anything",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Delete",
+  "name": "Confirmation dialog appears naming the record",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Delete",
+  "name": "Cancel keeps the record",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Delete",
+  "name": "Deleting a farmer that has farms is blocked with a clear message (FK RESTRICT)",
+  "pass": true,
+  "detail": "This farmer cannot be deleted because other records still depend on it. Remove or reassign those records first."
+ },
+ {
+  "group": "Delete",
+  "name": "Deleting a crop used by plantings is blocked",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Delete",
+  "name": "Harvest with no dependents is deleted after confirmation (child to parent order)",
+  "pass": true,
+  "detail": "Harvest #21 was deleted successfully."
+ },
+ {
+  "group": "Delete",
+  "name": "Planting with no dependents is deleted after confirmation (child to parent order)",
+  "pass": true,
+  "detail": "Planting #51 was deleted successfully."
+ },
+ {
+  "group": "Delete",
+  "name": "Crop with no dependents is deleted after confirmation (child to parent order)",
+  "pass": true,
+  "detail": "Crop #11 was deleted successfully."
+ },
+ {
+  "group": "Delete",
+  "name": "Farm with no dependents is deleted after confirmation (child to parent order)",
+  "pass": true,
+  "detail": "Farm #16 was deleted successfully."
+ },
+ {
+  "group": "Delete",
+  "name": "Farmer with no dependents is deleted after confirmation (child to parent order)",
+  "pass": true,
+  "detail": "Farmer #16 was deleted successfully."
+ },
+ {
+  "group": "Delete",
+  "name": "All test records are gone from the database",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Reports",
+  "name": "Report \"farmers_farms\" returns rows from the database (15)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Reports",
+  "name": "Report \"crops_per_farm\" returns rows from the database (30)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Reports",
+  "name": "Report \"planting_status\" returns rows from the database (50)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Reports",
+  "name": "Report \"harvests\" returns rows from the database (20)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Reports",
+  "name": "Report \"harvest_total\" returns rows from the database (10)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Reports",
+  "name": "Report \"harvest_value\" returns rows from the database (15)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Reports",
+  "name": "Total harvested quantity report total equals SUM(quantity_kg) in database",
+  "pass": true,
+  "detail": "Total 20 41,750.00"
+ },
+ {
+  "group": "Reports",
+  "name": "Estimated value report total equals SUM(quantity x price) in database",
+  "pass": true,
+  "detail": "Total 20 41,750.00 PHP 1,382,425.00"
+ },
+ {
+  "group": "Reports",
+  "name": "Date-range filter on Harvest report matches database (12 rows)",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Reports",
+  "name": "Farm filter on Harvest report works",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Reports",
+  "name": "Status filter on Planting-status report works",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Reports",
+  "name": "Empty result shows a friendly \"No records found\" message",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Reports",
+  "name": "Unknown report type falls back safely",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "User management",
+  "name": "Weak password is rejected",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "User management",
+  "name": "Admin can create a Staff user",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "User management",
+  "name": "New user password is hashed",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "User management",
+  "name": "Admin cannot deactivate their own account",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "User management",
+  "name": "Admin cannot delete their own account",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Authentication",
+  "name": "Logout returns to login page",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Authentication",
+  "name": "After logout, protected pages are inaccessible",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Roles",
+  "name": "Staff can log in",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Roles",
+  "name": "Staff does not see the Users menu",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Roles",
+  "name": "Staff opening users.php gets 403 Forbidden",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Roles",
+  "name": "Staff sees no Delete buttons",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Roles",
+  "name": "Staff can create records",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Roles",
+  "name": "Audit field created_by records the staff user",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Roles",
+  "name": "Staff forging a delete POST is denied (record still exists)",
+  "pass": true,
+  "detail": "status 0"
+ },
+ {
+  "group": "Authentication",
+  "name": "Account throttling: correct password refused after 5 failed attempts",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Responsive",
+  "name": "index.php has no horizontal page scroll at 390px phone width",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Responsive",
+  "name": "plantings.php has no horizontal page scroll at 390px phone width",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Responsive",
+  "name": "harvests.php has no horizontal page scroll at 390px phone width",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Responsive",
+  "name": "reports.php has no horizontal page scroll at 390px phone width",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "group": "Responsive",
+  "name": "Navbar collapses into a menu button on mobile",
+  "pass": true,
+  "detail": ""
+ }
+]

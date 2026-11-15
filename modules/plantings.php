@@ -1,0 +1,41 @@
+<?php
+
+return [
+    'model' => 'Planting',
+    'title' => 'Planting Records',
+    'singular' => 'Planting',
+    'page' => 'plantings.php',
+    'pk' => 'planting_id',
+    'delete_label' => 'planting_id',
+    'delete_prefix' => 'Planting #',
+    'search_placeholder' => 'Farm, crop, variety or farmer',
+    'columns' => [
+        ['key' => 'planting_id', 'label' => 'ID', 'sort' => 'id'],
+        ['key' => 'farm_name', 'label' => 'Farm', 'sort' => 'farm'],
+        ['key' => 'crop_name', 'label' => 'Crop', 'sort' => 'crop'],
+        ['key' => 'planting_date', 'label' => 'Planted', 'sort' => 'planted', 'format' => 'date'],
+        ['key' => 'area_planted', 'label' => 'Area (ha)', 'sort' => 'area', 'format' => 'decimal'],
+        ['key' => 'seed_quantity', 'label' => 'Seeds', 'sort' => 'seed', 'format' => 'decimal'],
+        ['key' => 'expected_harvest_date', 'label' => 'Expected harvest', 'sort' => 'expected', 'format' => 'date'],
+        ['key' => 'status_name', 'label' => 'Status', 'sort' => 'status', 'format' => 'status'],
+    ],
+    'filters' => [
+        ['name' => 'status_id', 'label' => 'Status', 'type' => 'select', 'lookup' => 'planting_status'],
+        ['name' => 'farm_id', 'label' => 'Farm', 'type' => 'select', 'lookup' => 'farm'],
+        ['name' => 'crop_id', 'label' => 'Crop', 'type' => 'select', 'lookup' => 'crop'],
+        ['name' => 'date_from', 'label' => 'Planted from', 'type' => 'date'],
+        ['name' => 'date_to', 'label' => 'Planted to', 'type' => 'date'],
+    ],
+    'view' => [
+        ['key' => 'farm_name', 'label' => 'Farm'],
+        ['key' => 'farmer_name', 'label' => 'Farmer'],
+        ['key' => 'crop_name', 'label' => 'Crop'],
+        ['key' => 'variety', 'label' => 'Variety'],
+        ['key' => 'planting_date', 'label' => 'Planting date', 'format' => 'date'],
+        ['key' => 'area_planted', 'label' => 'Area planted (ha)', 'format' => 'decimal'],
+        ['key' => 'seed_quantity', 'label' => 'Seed quantity', 'format' => 'decimal'],
+        ['key' => 'expected_harvest_date', 'label' => 'Expected harvest date', 'format' => 'date'],
+        ['key' => 'status_name', 'label' => 'Status', 'format' => 'status'],
+        ['key' => 'harvest_count', 'label' => 'Harvest records', 'format' => 'int'],
+    ],
+];
